@@ -1,0 +1,86 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <div class="header-body">
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt--7">
+    <div class="row">
+        <div class="col-xl-12 mb-5 mb-xl-0">
+            <div class="card ">
+                <div class="card-header bg-transparent">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2>Novo Usuario</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="formulario" (ngSubmit)="editarUsuario()">
+                        <ngb-alert class="alert alert-danger" *ngIf="!isClosed && errors?.length > 0" (close)="isClosed=true">
+                            <h3 id="msgRetorno">Ops! Alguma coisa deu errado :(</h3>
+                            <ul>
+                              <li *ngFor="let error of errors">{{ error }}</li>
+                            </ul>
+                          </ngb-alert>
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <label>Escolaridade</label>
+                                <select formControlName="escolaridade" class="form-control">
+                                    <option value="">--Selecione--</option>
+                                    <option value="1">Infantil</option>
+                                    <option value="2">Fundamental</option>
+                                    <option value="3">Médio</option>
+                                    <option value="4">Superior</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label>Nome</label>
+                                <input type="text" formControlName="nome" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f.nome.errors }" />
+                                <div *ngIf="submitted && f.nome.errors" class="invalid-feedback">
+                                    <div *ngIf="f.nome.errors.required">Campo requerido</div>
+                                </div>
+                            </div>
+                            <div class="form-group col-4">
+                                <label>Sobre Nome</label>
+                                <input type="text" formControlName="sobreNome" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f.sobreNome.errors }" />
+                                <div *ngIf="submitted && f.sobreNome.errors" class="invalid-feedback">
+                                    <div *ngIf="f.sobreNome.errors.required">Campo requerido</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label>Data de Nascimento</label>
+                                <input type="date" formControlName="dataNascimento" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f.dataNascimento.errors }" />
+                                <div *ngIf="submitted && f.dataNascimento.errors" class="invalid-feedback">
+                                    <div *ngIf="f.dataNascimento.errors.required">Campo requerido</div>
+                                    <div *ngIf="f.dataNascimento.errors.pattern">Data de nascimento deve estar no
+                                        formato YYYY-MM-DD</div>
+                                </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label>Email</label>
+                                <input type="text" formControlName="email" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required">Campo requerido</div>
+                                    <div *ngIf="f.email.errors.email">Email deve ser um email valido</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary mr-1">Atualizar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

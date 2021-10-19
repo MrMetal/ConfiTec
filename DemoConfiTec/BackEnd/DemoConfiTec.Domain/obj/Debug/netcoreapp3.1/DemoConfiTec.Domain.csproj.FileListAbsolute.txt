@@ -1,0 +1,9 @@
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\bin\Debug\netcoreapp3.1\DemoConfiTec.Domain.deps.json
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\bin\Debug\netcoreapp3.1\DemoConfiTec.Domain.dll
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\bin\Debug\netcoreapp3.1\DemoConfiTec.Domain.pdb
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\obj\Debug\netcoreapp3.1\DemoConfiTec.Domain.csprojAssemblyReference.cache
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\obj\Debug\netcoreapp3.1\DemoConfiTec.Domain.AssemblyInfoInputs.cache
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\obj\Debug\netcoreapp3.1\DemoConfiTec.Domain.AssemblyInfo.cs
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\obj\Debug\netcoreapp3.1\DemoConfiTec.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\obj\Debug\netcoreapp3.1\DemoConfiTec.Domain.dll
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Domain\obj\Debug\netcoreapp3.1\DemoConfiTec.Domain.pdb

@@ -1,0 +1,68 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+        
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt--7">
+    <div class="row">
+      <div class="col-xl-12 mb-5 mb-xl-0">
+        <div class="card ">
+          <div class="card-header bg-transparent">
+            <div class="row align-items-center">
+              <div class="col">
+                <h2 >Lista Usuarios</h2>
+                <a class="btn btn-info" [routerLink]="['/novo']">Novo Usuario</a>
+
+              </div>           
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+                <!-- Projects table -->
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Sobre Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Data Nascimento</th>
+                            <th scope="col">Escolaridade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let usuario of usuarios">
+                            <td>{{usuario.id}}</td>
+                            <td>{{usuario.nome}}</td>
+                            <td>{{usuario.sobreNome}}</td>
+                            <td>{{usuario.email}}</td>
+                            <td>{{usuario.dataNascimento | date}}</td>   
+                            <td *ngIf="usuario.escolaridade == 1">Infantil</td>
+                            <td *ngIf="usuario.escolaridade == 2">Funtamental</td>
+                            <td *ngIf="usuario.escolaridade == 3">Médio</td>
+                            <td *ngIf="usuario.escolaridade == 4">Superior</td>
+                            
+                            <td class="text-right">
+                                <a class="btn btn-primary btn-sm" [routerLink]="['/detalhe',usuario.id]">Detalhes
+                                    <span class="fa fa-search"></span>
+                                </a>&nbsp;
+                                <a class="btn btn-warning btn-sm" [routerLink]="['/editar',usuario.id]">Editar
+                                    <span class="fa fa-pencil-alt" ngbTooltip="Editar"></span>
+                                </a>&nbsp;
+                                <a class="btn btn-danger btn-sm" [routerLink]="['/remover',usuario.id]">Remover
+                                    <span class="fa fa-trash" ngbTooltip="Excluir"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>  
+  </div>
+  

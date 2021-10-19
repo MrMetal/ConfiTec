@@ -1,0 +1,76 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <div class="header-body">
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt--7">
+    <div class="row">
+        <div class="col-xl-12 mb-5 mb-xl-0">
+            <div class="card ">
+                <div class="card-header bg-transparent">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2>Remover do Usuario</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <form>
+                            <h6 class="heading-small text-muted mb-4">Informações do Usuario</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-username">Nome</label>
+                                        <input disabled type="text" id="input-username"
+                                            class="form-control form-control-alternative" value="{{usuario.nome}}">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-username">Sobre Nome</label>
+                                        <input disabled type="text" id="input-username"
+                                            class="form-control form-control-alternative" value="{{usuario.sobreNome}}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-username">Email</label>
+                                        <input disabled type="text" id="input-username"
+                                            class="form-control form-control-alternative" value="{{usuario.email}}">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-username">Data de Nascimento</label>
+                                        <input disabled type="text" id="input-username"
+                                            class="form-control form-control-alternative" value="{{usuario.dataNascimento | date}}">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="input-username">Escolaridade</label>
+                                        <input disabled type="text" id="input-username"
+                                            class="form-control form-control-alternative" value="{{usuario.escolaridade}}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a (click)="removerUsuario()" href="javascript:void(0)" class="btn btn-danger">Excluir</a>&nbsp;
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

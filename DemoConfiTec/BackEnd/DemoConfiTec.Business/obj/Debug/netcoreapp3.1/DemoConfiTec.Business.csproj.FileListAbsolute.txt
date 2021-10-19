@@ -1,0 +1,9 @@
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\bin\Debug\netcoreapp3.1\DemoConfiTec.Business.deps.json
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\bin\Debug\netcoreapp3.1\DemoConfiTec.Business.dll
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\bin\Debug\netcoreapp3.1\DemoConfiTec.Business.pdb
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\obj\Debug\netcoreapp3.1\DemoConfiTec.Business.csprojAssemblyReference.cache
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\obj\Debug\netcoreapp3.1\DemoConfiTec.Business.AssemblyInfoInputs.cache
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\obj\Debug\netcoreapp3.1\DemoConfiTec.Business.AssemblyInfo.cs
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\obj\Debug\netcoreapp3.1\DemoConfiTec.Business.csproj.CoreCompileInputs.cache
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\obj\Debug\netcoreapp3.1\DemoConfiTec.Business.dll
+C:\Users\Thiago\source\repos\DemoConfiTec\DemoConfiTec.Business\obj\Debug\netcoreapp3.1\DemoConfiTec.Business.pdb

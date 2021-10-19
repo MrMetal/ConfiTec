@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YBjEIl/RWPBxjtoLdDQcFhtycShQQq0aj1Prgb+0L5E9h9ULKRHfgUYNNNQHgz7hfRyvj9LHNnziwqOgFJ84zw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PCN07\\Videos\\Demo\\DemoConfiTec\\DemoConfiTec.Domain\\DemoConfiTec.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PCN07\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
